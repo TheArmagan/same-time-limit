@@ -8,5 +8,9 @@
   "main": "index.js",
   "author": "Kıraç Armağan Önal <kiracarmaganonal@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "log-update": "^4.0.0"
+  }
 }

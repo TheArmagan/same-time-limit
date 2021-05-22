@@ -1,13 +1,13 @@
-const sameTimeLimit = require("./index");
+const { method1, method2 } = require("./index");
 
 let count = 0;
-let tasks = Array(1000).fill((cb) => {
+let tasks = Array(100).fill((cb) => {
   count++;
-  console.log(count)
-  setTimeout(cb, 1000);
+  // console.log(count)
+  setTimeout(cb, 100);
 });
 
 let start = Date.now();
-sameTimeLimit(tasks, 50).then(() => {
+method2(tasks, 50).then(() => {
   console.log(Date.now() - start, count);
 })
