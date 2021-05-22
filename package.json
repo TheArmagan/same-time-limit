@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "chillout": "^5.0.0"
+  },
+  "name": "same-time-limit",
+  "version": "0.0.1",
+  "description": "Run async tasks with same time limit.",
+  "main": "index.js",
+  "author": "Kıraç Armağan Önal <kiracarmaganonal@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
