@@ -13,6 +13,7 @@ module.exports = function sameTimeLimit(tasks, limit) {
     let runningCount = 0;
     async function _tryToDo() {
       if (tasks.length != 0) {
+
         if (runningCount < limit) {
           let task = tasks.shift();
           runningCount++;
@@ -21,7 +22,8 @@ module.exports = function sameTimeLimit(tasks, limit) {
             _tryToDo();
           })
         }
-      } else {
+
+      } else if (runningCount == 0) {
         return resolve();
       }
     }
